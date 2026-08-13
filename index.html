@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mental Health Predictor</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Background Glow -->
+    <div class="background-shape shape-1"></div>
+    <div class="background-shape shape-2"></div>
+
+    <div class="container">
+
+        <!-- HERO -->
+        <div class="hero">
+
+            <div class="logo">
+                🧠
+            </div>
+
+            <div>
+                <div class="tag">
+                    AI • MACHINE LEARNING
+                </div>
+
+                <h1>
+                    MindScore <span>AI</span>
+                </h1>
+
+                <p class="subtitle">
+                    Student Mental Health Prediction System.
+            </div>
+
+        </div>
+
+
+        <!-- MAIN CARD -->
+        <div class="card">
+
+            <!-- CARD HEADER -->
+            <div class="card-heading">
+
+                <div>
+                    <h2>Student Information</h2>
+
+                    <p>
+                        Enter your details to generate an AI-powered prediction.
+                    </p>
+                </div>
+
+                <div class="step">
+                    01
+                </div>
+
+            </div>
+
+
+            <!-- FORM -->
+            <form id="predictionForm">
+
+                <!-- PERSONAL INFORMATION -->
+                <div class="section-title">
+                    <span>👤</span>
+                    Personal Information
+                </div>
+
+
+                <div class="form-grid">
+
+                    <!-- AGE -->
+                    <div class="field">
+
+                        <label for="Age">
+                            Age
+                        </label>
+
+                        <input type="number" id="Age" name="Age" min="10" max="100" placeholder="Enter your age"
+                            required>
+
+                    </div>
+
+
+                    <!-- GENDER -->
+                    <div class="field">
+
+                        <label for="Gender">
+                            Gender
+                        </label>
+
+                        <select id="Gender" name="Gender" required>
+
+                            <option value="">
+                                Select gender
+                            </option>
+
+                            <option value="Male">
+                                Male
+                            </option>
+
+                            <option value="Female">
+                                Female
+                            </option>
+
+                            <option value="Other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- COUNTRY -->
+                    <div class="field">
+
+                        <label for="Country">
+                            Country
+                        </label>
+
+                        <input type="text" id="Country" name="Country" placeholder="e.g. India" required>
+
+                    </div>
+
+
+                    <!-- ACADEMIC LEVEL -->
+                    <div class="field">
+
+                        <label for="Academic_Level">
+                            Academic Level
+                        </label>
+
+                        <select id="Academic_Level" name="Academic_Level" required>
+
+                            <option value="">
+                                Select academic level
+                            </option>
+
+                            <option value="High School">
+                                High School
+                            </option>
+
+                            <option value="Undergraduate">
+                                Undergraduate
+                            </option>
+
+                            <option value="Postgraduate">
+                                Postgraduate
+                            </option>
+
+                            <option value="PhD">
+                                PhD
+                            </option>
+
+                            <option value="Other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <!-- SOCIAL MEDIA -->
+                <div class="section-title">
+
+                    <span>📱</span>
+
+                    Social Media Usage
+
+                </div>
+
+
+                <div class="form-grid">
+
+                    <!-- PLATFORM -->
+                    <div class="field">
+
+                        <label for="Most_Used_Platform">
+                            Most Used Platform
+                        </label>
+
+                        <select id="Most_Used_Platform" name="Most_Used_Platform" required>
+
+                            <option value="">
+                                Select platform
+                            </option>
+
+                            <option value="Instagram">
+                                Instagram
+                            </option>
+
+                            <option value="Facebook">
+                                Facebook
+                            </option>
+
+                            <option value="Twitter">
+                                Twitter
+                            </option>
+
+                            <option value="Snapchat">
+                                Snapchat
+                            </option>
+
+                            <option value="TikTok">
+                                TikTok
+                            </option>
+
+                            <option value="YouTube">
+                                YouTube
+                            </option>
+
+                            <option value="Reddit">
+                                Reddit
+                            </option>
+
+                            <option value="Other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- PURPOSE -->
+                    <div class="field">
+
+                        <label for="Purpose_Of_Use">
+                            Purpose Of Use
+                        </label>
+
+                        <select id="Purpose_Of_Use" name="Purpose_Of_Use" required>
+
+                            <option value="">
+                                Select purpose
+                            </option>
+
+                            <option value="Socializing">
+                                Socializing
+                            </option>
+
+                            <option value="Entertainment">
+                                Entertainment
+                            </option>
+
+                            <option value="Education">
+                                Education
+                            </option>
+
+                            <option value="News">
+                                News
+                            </option>
+
+                            <option value="Other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- DAILY USAGE -->
+                    <div class="field">
+
+                        <label for="Avg_Daily_Usage_Hours">
+                            Average Daily Usage
+                        </label>
+
+                        <div class="input-unit">
+
+                            <input type="number" id="Avg_Daily_Usage_Hours" name="Avg_Daily_Usage_Hours" min="0"
+                                max="24" step="0.1" placeholder="e.g. 5.5" required>
+
+                            <span>hrs</span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- UNLOCKS -->
+                    <div class="field">
+
+                        <label for="Daily_Unlocks">
+                            Daily Unlocks
+                        </label>
+
+                        <div class="input-unit">
+
+                            <input type="number" id="Daily_Unlocks" name="Daily_Unlocks" min="0" placeholder="e.g. 50"
+                                required>
+
+                            <span>times</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- LIFESTYLE -->
+                <div class="section-title">
+
+                    <span>🌿</span>
+
+                    Lifestyle & Wellbeing
+
+                </div>
+
+
+                <div class="form-grid">
+
+                    <!-- STUDY -->
+                    <div class="field">
+
+                        <label for="Study_Hours">
+                            Study Hours
+                        </label>
+
+                        <div class="input-unit">
+
+                            <input type="number" id="Study_Hours" name="Study_Hours" min="0" max="24" step="0.1"
+                                placeholder="e.g. 6" required>
+
+                            <span>hrs</span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PHYSICAL ACTIVITY -->
+                    <div class="field">
+
+                        <label for="Physical_Activity_Hours">
+                            Physical Activity
+                        </label>
+
+                        <div class="input-unit">
+
+                            <input type="number" id="Physical_Activity_Hours" name="Physical_Activity_Hours" min="0"
+                                max="24" step="0.1" placeholder="e.g. 1" required>
+
+                            <span>hrs</span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- SLEEP -->
+                    <div class="field">
+
+                        <label for="Sleep_Hours_Per_Night">
+                            Sleep Per Night
+                        </label>
+
+                        <div class="input-unit">
+
+                            <input type="number" id="Sleep_Hours_Per_Night" name="Sleep_Hours_Per_Night" min="0"
+                                max="24" step="0.1" placeholder="e.g. 7" required>
+
+                            <span>hrs</span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- STRESS -->
+                    <div class="field">
+
+                        <label for="Stress_Level">
+                            Stress Level
+                        </label>
+
+                        <select id="Stress_Level" name="Stress_Level" required>
+
+                            <option value="">
+                                Select stress level
+                            </option>
+
+                            <option value="Low">
+                                Low
+                            </option>
+
+                            <option value="Medium">
+                                Medium
+                            </option>
+
+                            <option value="High">
+                                High
+                            </option>
+
+                            <option value="Very High">
+                                Very High
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PREDICT BUTTON -->
+                <button type="submit" id="predictBtn">
+                    Predict Mental Health Score
+                </button>
+
+            </form>
+
+
+            <!-- LOADING -->
+            <div id="loading" class="hidden">
+
+                <div class="loader"></div>
+
+                <p>
+                    Analyzing your information...
+                </p>
+
+            </div>
+
+
+            <!-- RESULT -->
+            <div id="result" class="result hidden">
+
+                <div class="result-header">
+
+                    <div class="result-icon">
+                        ✨
+                    </div>
+
+                    <div>
+
+                        <p>
+                            PREDICTION COMPLETE
+                        </p>
+
+                        <h2>
+                            Your Mental Health Score
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="score-container">
+
+                    <!-- CIRCLE -->
+                    <div class="score-circle">
+
+                        <svg viewBox="0 0 120 120">
+
+                            <circle class="circle-bg" cx="60" cy="60" r="52"></circle>
+
+                            <circle id="circleProgress" class="circle-progress" cx="60" cy="60" r="52"></circle>
+
+                        </svg>
+
+
+                        <div class="score-number">
+
+                            <strong id="score">
+                                0.00
+                            </strong>
+
+                            <small>
+                                / 10
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- SCORE INFO -->
+                    <div class="score-info">
+
+                        <h3 id="scoreMessage">
+                            Prediction Result
+                        </h3>
+
+                        <p id="scoreDescription">
+                            Your predicted mental health score is displayed above.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <button type="button" id="againBtn" class="again-btn">
+                    ↻ Make Another Prediction
+                </button>
+
+            </div>
+
+
+            <!-- ERROR -->
+            <div id="error" class="hidden"></div>
+
+        </div>
+
+
+        <!-- FOOTER -->
+        <footer>
+
+            <p>
+                Mental Health Predictor • Powered by Machine Learning & FastAPI
+            </p>
+
+            <p>
+                This prediction is for educational purposes only.
+            </p>
+
+        </footer>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
