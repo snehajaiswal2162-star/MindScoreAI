@@ -21,7 +21,7 @@ const errorBox = document.getElementById("error");
 
 
 // FastAPI URL
-const API_URL = "https://mindscoreai.onrender.com";
+const API_URL = "https://mindscoreai.onrender.com/predict";
 
 
 // Circle settings
